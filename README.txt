@@ -7,7 +7,11 @@
 /dao:
 
 # models
-/model: VO(View Object), DTO(Data Transfer Object), DO(Domain Object), PO(Persistent Object) models
+/model
+    /vo
+    /dto
+    /do
+    /po
 
 # common
 /common: api common functions

@@ -24,5 +24,5 @@
 /config_test: config for UT
 
 # database
-/devdb: database for develop env
-/testdb: database for UT
+/env_databases: databases for each env
+/database_test: database for UT

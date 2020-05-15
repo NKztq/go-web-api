@@ -25,7 +25,6 @@
 # config
 /conf: conf structs
 /env_configs: configs for each env
-/config_test: config for UT
 
 # database
 /env_databases: databases for each env

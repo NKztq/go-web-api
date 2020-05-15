@@ -23,13 +23,14 @@ type APIConf struct {
 	Server ServerConfig
 }
 
+// Load config and do check.
 func Load(confPath string) (*APIConf, error) {
 	conf, err := load(confPath)
 	if err != nil {
 		return conf, err
 	}
 
-	err = conf.Check()
+	err = conf.check()
 	if err != nil {
 		return conf, err
 	}
@@ -44,7 +45,7 @@ func load(confPath string) (*APIConf, error) {
 	return &conf, err
 }
 
-func (a *APIConf) Check() error {
+func (a *APIConf) check() error {
 	t := reflect.TypeOf(a)
 	v := reflect.ValueOf(a)
 
